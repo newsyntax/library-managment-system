@@ -1,3 +1,4 @@
+import Features from "./components/Features";
 import Header from "./components/Header";
 import Navigation from "./components/Navigation";
 import Trusted from "./components/Trusted";
@@ -9,6 +10,7 @@ const App = () => {
         <Navigation />
         <Header />
         <Trusted />
+        <Features />
       </div>
     </div>
   );
