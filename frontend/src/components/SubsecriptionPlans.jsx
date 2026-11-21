@@ -17,7 +17,7 @@ const SubsecriptionPlans = () => {
             <li>میزبانی نیم بها</li>
           </ul>
           <button className="px-4 py-2 bg-neutral-950 text-white rounded-lg">
-            خرید
+            مشاهده
           </button>
         </div>
         <div className="flex flex-col gap-4 ">
@@ -32,7 +32,7 @@ const SubsecriptionPlans = () => {
             <li>میزبانی نیم بها</li>
           </ul>
           <button className="px-4 py-2 bg-neutral-950 text-white rounded-lg">
-            خرید
+            مشاهده
           </button>
         </div>
         <div className="flex flex-col gap-4 ">
@@ -47,7 +47,7 @@ const SubsecriptionPlans = () => {
             <li>میزبانی نیم بها</li>
           </ul>
           <button className="px-4 py-2 bg-neutral-950 text-white rounded-lg">
-            خرید
+            مشاهده
           </button>
         </div>
       </div>
