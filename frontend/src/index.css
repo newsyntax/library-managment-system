@@ -53,3 +53,7 @@ button {
 .section_title {
   font-family: "bold";
 }
+
+section {
+  margin-bottom: 120px;
+}
