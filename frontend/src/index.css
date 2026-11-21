@@ -1,1 +1,47 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: "light";
+  src: url("./assets/fonts/IRANYekanX-Light.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "regular";
+  src: url("./assets/fonts/IRANYekanX-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "bold";
+  src: url("./assets/fonts/IRANYekanX-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "black";
+  src: url("./assets/fonts/IRANYekanX-Black.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "extra-black";
+  src: url("./assets/fonts/IRANYekanX-ExtraBlack.ttf") format("truetype");
+}
+
+body {
+  font-family: "regular";
+}
+
+html {
+  direction: rtl;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+.header_title {
+  font-family: "black";
+}
+
+.nav__title {
+  font-family: "bold";
+}
