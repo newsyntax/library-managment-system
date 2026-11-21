@@ -1,4 +1,5 @@
 import Articles from "./components/Articles";
+import CopyRight from "./components/CopyRight";
 import Features from "./components/Features";
 import Header from "./components/Header";
 import Navigation from "./components/Navigation";
@@ -15,6 +16,7 @@ const App = () => {
         <Features />
         <SubsecriptionPlans />
         <Articles />
+        <CopyRight />
       </div>
     </div>
   );
