@@ -1,3 +1,4 @@
+import Articles from "./components/Articles";
 import Features from "./components/Features";
 import Header from "./components/Header";
 import Navigation from "./components/Navigation";
@@ -13,6 +14,7 @@ const App = () => {
         <Trusted />
         <Features />
         <SubsecriptionPlans />
+        <Articles />
       </div>
     </div>
   );
