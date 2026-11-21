@@ -3,7 +3,7 @@ const Header = () => {
     <header>
       <div className="flex justify-between items-center">
         <div className="flex flex-col gap-4">
-          <h1 className="header_title text-4xl w-68 leading-12">
+          <h1 className="header_title text-5xl w-88 leading-20">
             مدیریت هوشمند کتابخانه شما
           </h1>
           <h6 className="text-xl">

@@ -45,3 +45,11 @@ html {
 .nav__title {
   font-family: "bold";
 }
+
+button {
+  cursor: pointer;
+}
+
+.section_title {
+  font-family: "bold";
+}
