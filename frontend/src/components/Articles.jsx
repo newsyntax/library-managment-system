@@ -2,7 +2,7 @@ import SectionTitle from "../components/SectionTitle";
 
 const Articles = () => {
   return (
-    <div>
+    <section>
       <SectionTitle title={"آخرین مقالات"} />
       <div className="flex justify-between gap-10 ">
         <div className="flex cursor-pointer flex-col justify-center hover:scale-105 transition gap-2 border-neutral-950 border-2 rounded-2xl p-4">
@@ -57,7 +57,7 @@ const Articles = () => {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 export default Articles;
