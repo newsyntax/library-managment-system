@@ -1,36 +1,77 @@
-const Navigation = () => {
-  return (
-    <nav className="pt-6">
-      <div className="flex items-center justify-between">
-        <h4 className="nav__title">سامانه مدیریت کتابخانه</h4>
-        <ul className="flex items-center gap-6 text-lg">
-          <li>
-            <a href="#">خانه</a>
-          </li>
-          <li>
-            <a href="#">ویژگی‌ها</a>
-          </li>
-          <li>
-            <a href="#">تعرفه‌ها</a>
-          </li>
-          <li>
-            <a href="#">بلاگ</a>
-          </li>
-          <li>
-            <a href="#">تماس با ما</a>
-          </li>
-        </ul>
+import Sidebar from "./Sidebar";
+import { useState } from "react";
 
-        <div className="flex items-center gap-4">
-          <button className="px-4 py-2 border-neutral-950 border-2 rounded-lg">
-            ورود
-          </button>
-          <button className="px-4 py-2 bg-neutral-950 text-white rounded-lg">
-            ثبت نام رایگان
-          </button>
+const Navigation = () => {
+  const [isOpen, setIsOpnen] = useState(true);
+
+  return (
+    <div>
+      <div
+        onClick={() => {
+          setIsOpnen(!isOpen);
+        }}
+        className={`w-screen ${isOpen ? `block` : "hidden"} h-screen fixed left-0 right-0 top-0 bottom-0 bg-black opacity-50`}></div>
+
+      <nav className="pt-6 hidden lg:block">
+        <div className="flex items-center justify-between">
+          <h4 className="nav__title">سامانه مدیریت کتابخانه</h4>
+          <ul className="flex items-center gap-6 text-lg">
+            <li>
+              <a href="#">خانه</a>
+            </li>
+            <li>
+              <a href="#">ویژگی‌ها</a>
+            </li>
+            <li>
+              <a href="#">تعرفه‌ها</a>
+            </li>
+            <li>
+              <a href="#">بلاگ</a>
+            </li>
+            <li>
+              <a href="#">تماس با ما</a>
+            </li>
+          </ul>
+
+          <div className="flex items-center gap-4">
+            <button className="px-4 py-2 border-neutral-950 border-2 rounded-lg">
+              ورود
+            </button>
+            <button className="px-4 py-2 bg-neutral-950 text-white rounded-lg">
+              ثبت نام رایگان
+            </button>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
+      <nav className="flex justify-between lg:hidden items-center pt-4">
+        <h4 className="nav__title">سامانه مدیریت کتابخانه</h4>
+        <div
+          onClick={() => {
+            setIsOpnen(!isOpen);
+          }}>
+          <svg
+            width="32"
+            height="32"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M21 7.75H3C2.59 7.75 2.25 7.41 2.25 7C2.25 6.59 2.59 6.25 3 6.25H21C21.41 6.25 21.75 6.59 21.75 7C21.75 7.41 21.41 7.75 21 7.75Z"
+              fill="#292D32"
+            />
+            <path
+              d="M21 12.75H3C2.59 12.75 2.25 12.41 2.25 12C2.25 11.59 2.59 11.25 3 11.25H21C21.41 11.25 21.75 11.59 21.75 12C21.75 12.41 21.41 12.75 21 12.75Z"
+              fill="#292D32"
+            />
+            <path
+              d="M21 17.75H3C2.59 17.75 2.25 17.41 2.25 17C2.25 16.59 2.59 16.25 3 16.25H21C21.41 16.25 21.75 16.59 21.75 17C21.75 17.41 21.41 17.75 21 17.75Z"
+              fill="#292D32"
+            />
+          </svg>
+        </div>
+      </nav>
+      <Sidebar isOpen={isOpen} />
+    </div>
   );
 };
 export default Navigation;
