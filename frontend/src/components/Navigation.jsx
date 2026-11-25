@@ -2,7 +2,7 @@ import Sidebar from "./Sidebar";
 import { useState } from "react";
 
 const Navigation = () => {
-  const [isOpen, setIsOpnen] = useState(true);
+  const [isOpen, setIsOpnen] = useState(false);
 
   return (
     <div>
@@ -10,7 +10,7 @@ const Navigation = () => {
         onClick={() => {
           setIsOpnen(!isOpen);
         }}
-        className={`w-screen ${isOpen ? `block` : "hidden"} h-screen fixed left-0 right-0 top-0 bottom-0 bg-black opacity-50`}></div>
+        className={`w-screen ${isOpen ? `block` : "hidden"} h-screen lg:hidden fixed left-0 right-0 top-0 bottom-0 bg-black opacity-50`}></div>
 
       <nav className="pt-6 hidden lg:block">
         <div className="flex items-center justify-between">
